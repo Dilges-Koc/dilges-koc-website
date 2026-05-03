@@ -1,0 +1,348 @@
+import type { Metadata } from "next";
+import Header from "./Header";
+import Footer from "./Footer";
+import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+  title: "Dilges Koc | Webentwicklung & Frontend",
+  description:
+    "Dilges Koc entwickelt moderne Webseiten, Landingpages und Frontend-Lösungen für Unternehmen, Selbstständige und Startups.",
+};
+
+export default function Home() {
+  return (
+    <main className="relative min-h-screen overflow-x-hidden bg-[#050816] text-white">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.22),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.18),transparent_25%),radial-gradient(circle_at_20%_80%,rgba(16,185,129,0.10),transparent_25%)]" />
+
+      <Header />
+     
+      <section className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 py-24">
+        <div className="inline-flex w-fit items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-cyan-200">
+          Freelancer für Webentwicklung
+        </div>
+
+        <h1 className="mt-8 max-w-5xl text-5xl font-bold leading-[1.05] md:text-7xl">
+          Ich entwickle{" "}
+          <span className="bg-gradient-to-r from-cyan-300 via-blue-300 to-zinc-100 bg-clip-text text-transparent">
+            moderne Webseiten
+          </span>{" "}
+          und Frontends mit klarem Design und professioneller Umsetzung.
+        </h1>
+
+        <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-300 md:text-xl">
+          Ich unterstütze Unternehmen, Selbstständige und kleine Teams bei
+          modernen Webseiten, Landingpages und individuellen Frontend-Lösungen
+          mit Fokus auf Performance, Design und Nutzerfreundlichkeit.
+        </p>
+
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#kontakt"
+            className="rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-black transition hover:scale-[1.02] hover:bg-cyan-200"
+          >
+            Projekt anfragen
+          </a>
+
+          <a
+            href="#projekte"
+            className="rounded-full border border-cyan-400/20 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
+          >
+            Projekte ansehen
+          </a>
+        </div>
+
+        <div className="mt-16 grid gap-4 md:grid-cols-3">
+          <div className="rounded-3xl border border-cyan-400/10 bg-white/5 p-6 backdrop-blur">
+            <p className="text-sm text-zinc-400">Fokus</p>
+            <p className="mt-2 text-xl font-semibold">Moderne Webseiten</p>
+          </div>
+
+          <div className="rounded-3xl border border-cyan-400/10 bg-white/5 p-6 backdrop-blur">
+            <p className="text-sm text-zinc-400">Schwerpunkt</p>
+            <p className="mt-2 text-xl font-semibold">Frontend & UI</p>
+          </div>
+
+          <div className="rounded-3xl border border-cyan-400/10 bg-white/5 p-6 backdrop-blur">
+            <p className="text-sm text-zinc-400">Anspruch</p>
+            <p className="mt-2 text-xl font-semibold">Sauber & professionell</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="leistungen" className="mx-auto max-w-6xl px-6 py-24">
+        <div className="max-w-2xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-cyan-300/70">
+            Leistungen
+          </p>
+          <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+            Wobei ich dich unterstützen kann
+          </h2>
+          <p className="mt-4 text-lg text-zinc-400">
+            Ich entwickle moderne und übersichtliche Weblösungen, die nicht nur
+            gut aussehen, sondern auch schnell, verständlich und professionell
+            wirken.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+  <a
+    href="/leistungen/landingpages"
+    className="block rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-8 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+  >
+    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-blue-400/20" />
+    <h3 className="mt-6 text-2xl font-semibold">Landingpages</h3>
+    <p className="mt-4 leading-7 text-zinc-400">
+      Moderne Seiten für Dienstleistungen, Produkte und Unternehmen mit
+      klarem Aufbau und starkem ersten Eindruck.
+    </p>
+  </a>
+
+  <a
+    href="/leistungen/firmenwebseiten"
+    className="block rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-8 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+  >
+    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-blue-400/20" />
+    <h3 className="mt-6 text-2xl font-semibold">Firmenwebseiten</h3>
+    <p className="mt-4 leading-7 text-zinc-400">
+      Professionelle Webseiten für Selbstständige, lokale Firmen, Startups
+      und kleinere Unternehmen.
+    </p>
+  </a>
+
+  <a
+    href="/leistungen/frontend-entwicklung"
+    className="block rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-8 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+  >
+    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-blue-400/20" />
+    <h3 className="mt-6 text-2xl font-semibold">Frontend-Entwicklung</h3>
+    <p className="mt-4 leading-7 text-zinc-400">
+      Saubere, responsive und moderne Benutzeroberflächen mit Fokus auf
+      Nutzerfreundlichkeit und gutes Design.
+    </p>
+  </a>
+
+  <a
+    href="/leistungen/individuelle-webloesungen"
+    className="block rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-8 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+  >
+    <div className="h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-blue-400/20" />
+    <h3 className="mt-6 text-2xl font-semibold">Individuelle Lösungen</h3>
+    <p className="mt-4 leading-7 text-zinc-400">
+      Maßgeschneiderte Webseiten und Weboberflächen für konkrete
+      geschäftliche Anforderungen.
+    </p>
+  </a>
+</div>
+      </section>
+
+      <section id="projekte" className="mx-auto max-w-6xl px-6 py-24">
+  <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <div className="max-w-2xl">
+      <p className="text-sm uppercase tracking-[0.25em] text-cyan-300/70">
+        Showcase-Projekte
+      </p>
+      <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+        Ausgewählte Beispielprojekte
+      </h2>
+    </div>
+
+    <p className="max-w-xl text-zinc-400">
+      Diese Projekte zeigen beispielhaft, wie moderne Webseiten, Oberflächen
+      und digitale Auftritte gestaltet und umgesetzt werden können.
+    </p>
+  </div>
+
+  <div className="mt-12 grid gap-6 lg:grid-cols-3">
+    <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+      <div className="p-5">
+        <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
+          <div className="mb-4 flex gap-2">
+            <div className="h-3 w-3 rounded-full bg-red-400/70" />
+            <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
+            <div className="h-3 w-3 rounded-full bg-green-400/70" />
+          </div>
+
+          <div className="rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-500/10 p-6">
+            <div className="h-4 w-20 rounded bg-cyan-200/60" />
+            <div className="mt-6 h-10 w-4/5 rounded bg-white/90" />
+            <div className="mt-3 h-4 w-full rounded bg-white/20" />
+            <div className="mt-2 h-4 w-5/6 rounded bg-white/20" />
+            <div className="mt-8 h-10 w-32 rounded-full bg-cyan-300" />
+          </div>
+        </div>
+      </div>
+
+      <div className="px-8 pb-8">
+        <p className="text-sm text-cyan-300/70">Showcase 01</p>
+        <h3 className="mt-2 text-2xl font-semibold">Business Landingpage</h3>
+        <p className="mt-4 leading-7 text-zinc-400">
+          Moderne Landingpage für ein Unternehmen mit starkem Hero-Bereich,
+          klaren Leistungen, Kontaktsektion und professioneller Außenwirkung.
+        </p>
+        <p className="mt-4 text-sm text-zinc-500">
+          Fokus: Design, Struktur, Conversion, Responsiveness
+        </p>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+      <div className="p-5">
+        <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
+          <div className="mb-4 flex gap-2">
+            <div className="h-3 w-3 rounded-full bg-red-400/70" />
+            <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
+            <div className="h-3 w-3 rounded-full bg-green-400/70" />
+          </div>
+
+          <div className="grid grid-cols-[80px_1fr] gap-4">
+            <div className="rounded-xl bg-white/5 p-3">
+              <div className="h-4 w-full rounded bg-cyan-300/40" />
+              <div className="mt-3 h-4 w-3/4 rounded bg-white/10" />
+              <div className="mt-2 h-4 w-2/3 rounded bg-white/10" />
+              <div className="mt-2 h-4 w-4/5 rounded bg-white/10" />
+            </div>
+
+            <div className="rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-400/10 p-4">
+              <div className="grid grid-cols-2 gap-3">
+                <div className="h-20 rounded-xl bg-white/10" />
+                <div className="h-20 rounded-xl bg-white/10" />
+                <div className="col-span-2 h-28 rounded-xl bg-cyan-300/20" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-8 pb-8">
+        <p className="text-sm text-cyan-300/70">Showcase 02</p>
+        <h3 className="mt-2 text-2xl font-semibold">Frontend Dashboard</h3>
+        <p className="mt-4 leading-7 text-zinc-400">
+          Dashboard-Konzept mit moderner Oberfläche, Navigation, Karten,
+          Kennzahlen und strukturiertem Aufbau für businessnahe Webanwendungen.
+        </p>
+        <p className="mt-4 text-sm text-zinc-500">
+          Fokus: UI, Klarheit, moderne Komponenten, Übersichtlichkeit
+        </p>
+      </div>
+    </div>
+
+    <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+      <div className="p-5">
+        <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
+          <div className="mb-4 flex gap-2">
+            <div className="h-3 w-3 rounded-full bg-red-400/70" />
+            <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
+            <div className="h-3 w-3 rounded-full bg-green-400/70" />
+          </div>
+
+          <div className="rounded-xl bg-gradient-to-br from-zinc-800 via-zinc-900 to-black p-6">
+            <div className="h-4 w-24 rounded bg-cyan-300/40" />
+            <div className="mt-6 h-12 w-3/4 rounded bg-white/90" />
+            <div className="mt-3 h-4 w-full rounded bg-white/20" />
+            <div className="mt-2 h-4 w-4/5 rounded bg-white/20" />
+            <div className="mt-8 grid grid-cols-3 gap-3">
+              <div className="h-16 rounded-xl bg-white/10" />
+              <div className="h-16 rounded-xl bg-white/10" />
+              <div className="h-16 rounded-xl bg-white/10" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="px-8 pb-8">
+        <p className="text-sm text-cyan-300/70">Showcase 03</p>
+        <h3 className="mt-2 text-2xl font-semibold">
+          Portfolio / Freelancer Website
+        </h3>
+        <p className="mt-4 leading-7 text-zinc-400">
+          Moderne persönliche Website mit Leistungen, Kontaktformular,
+          Unterseiten, Impressum und professionellem Tech-/Business-Look.
+        </p>
+        <p className="mt-4 text-sm text-zinc-500">
+          Fokus: Branding, Struktur, Vertrauen, klare Nutzerführung
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section
+        id="ueber-mich"
+        className="mx-auto grid max-w-6xl gap-10 px-6 py-24 md:grid-cols-[1.2fr_0.8fr]"
+      >
+        <div>
+          <p className="text-sm uppercase tracking-[0.25em] text-cyan-300/70">
+            Über mich
+          </p>
+          <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+            Informatik-Hintergrund mit technischem Blick
+          </h2>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
+            Ich habe mein Bachelorstudium in Informatik erfolgreich abgeschlossen
+            und baue aktuell mein eigenes Freelancer-Angebot im Bereich
+            Webentwicklung auf. Mein Fokus liegt auf modernen, performanten und
+            professionellen Webseiten mit klarem Design und sauberer technischer
+            Umsetzung.
+          </p>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-400">
+            Neben moderner Webentwicklung bringe ich auch technisches Verständnis
+            für strukturierte Systeme, saubere Architektur und zuverlässige
+            Umsetzung mit. Mein Ziel ist es, hochwertige digitale Lösungen zu
+            entwickeln, die professionell wirken und echten Nutzen schaffen.
+          </p>
+        </div>
+
+        <div className="rounded-3xl border border-cyan-400/10 bg-white/5 p-8 backdrop-blur">
+          <div className="space-y-6">
+            <div>
+              <p className="text-sm text-zinc-500">Name</p>
+              <p className="mt-2 text-lg font-semibold">Dilges Koc</p>
+            </div>
+
+            <div>
+              <p className="text-sm text-zinc-500">Schwerpunkte</p>
+              <p className="mt-2 text-lg font-semibold">
+                Frontend, Webdesign, moderne Webseiten
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm text-zinc-500">Technologien</p>
+              <p className="mt-2 text-lg font-semibold">
+                React, Next.js, TypeScript, Tailwind
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm text-zinc-500">Zielkunden</p>
+              <p className="mt-2 text-lg font-semibold">
+                Unternehmen, Selbstständige, Startups und Teams
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" className="mx-auto max-w-6xl px-6 py-24">
+  <div className="rounded-[2rem] border border-cyan-400/10 bg-gradient-to-br from-[#0b1224] via-[#0a1020] to-[#050816] p-8 shadow-2xl shadow-cyan-950/20 md:p-12">
+    <p className="text-sm uppercase tracking-[0.25em] text-cyan-300/70">
+      Kontakt
+    </p>
+    <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+      Lass uns gemeinsam dein Projekt umsetzen
+    </h2>
+    <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
+      Du suchst Unterstützung für eine moderne Webseite, eine Landingpage
+      oder ein Frontend-Projekt? Dann sende mir einfach eine Anfrage.
+    </p>
+
+    <ContactForm />
+  </div>
+</section>
+      <Footer />
+
+    </main>
+  );
+}
