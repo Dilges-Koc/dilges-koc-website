@@ -70,14 +70,14 @@ export default function Header() {
             Leistungen
           </a>
           <a
-            href="/#projekte"
+            href="/projekte"
             className="transition hover:text-cyan-300"
             onClick={() => setMenuOpen(false)}
           >
             Projekte
           </a>
           <a
-            href="/#ueber-mich"
+            href="/ueber-mich"
             className="transition hover:text-cyan-300"
             onClick={() => setMenuOpen(false)}
           >
