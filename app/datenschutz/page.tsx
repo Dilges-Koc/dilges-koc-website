@@ -30,9 +30,9 @@ export default function DatenschutzPage() {
             <p className="mt-3 leading-8">
               Dilges Koc
               <br />
-              [Straße und Hausnummer]
+              Peterstraß 5
               <br />
-              [PLZ Ort]
+              52062 Aachen
               <br />
               E-Mail:{" "}
               <a

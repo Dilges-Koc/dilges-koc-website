@@ -21,9 +21,9 @@ export default function ImpressumPage() {
             <p className="mt-3 leading-8">
               Dilges Koc
               <br />
-              [Straße und Hausnummer]
+              Peterstraße 5
               <br />
-              [PLZ Ort]
+              52062 Aachen
               <br />
               Deutschland
             </p>
@@ -47,17 +47,16 @@ export default function ImpressumPage() {
             <p className="mt-3 leading-8">
               Dilges Koc
               <br />
-              [Straße und Hausnummer]
+              Peterstraße 5
               <br />
-              [PLZ Ort]
+              52062 Aachen
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-semibold text-white">Hinweis</h2>
             <p className="mt-3 leading-8">
-              Bitte ergänze hier noch deine vollständige ladungsfähige Anschrift,
-              bevor du die Website veröffentlichst.
+              
             </p>
           </section>
         </div>
