@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://deine-domain.de"),
+  metadataBase: new URL("https://dilges-koc-website.vercel.app"),
   title: {
     default: "Dilges Koc",
     template: "%s | Dilges Koc",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Dilges Koc",
     description:
       "Moderne Webentwicklung, Landingpages, Firmenwebseiten und Frontend-Lösungen von Dilges Koc.",
-    url: "https://deine-domain.de",
+    url: "https://dilges-koc-website.vercel.app",
     siteName: "Dilges Koc",
     locale: "de_DE",
     type: "website",
