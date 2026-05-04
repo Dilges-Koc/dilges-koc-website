@@ -65,6 +65,61 @@ export default function FrontendDashboardPage() {
             </div>
           </div>
 
+          <section className="mt-16">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Projekt-Highlights
+            </h2>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              <div className="rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-6">
+                <h3 className="text-xl font-semibold">KPI- und Card-Layout</h3>
+                <p className="mt-3 text-zinc-400">
+                  Klare Aufteilung für Kennzahlen, Diagramme und schnelle
+                  Orientierung.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 p-6">
+                <h3 className="text-xl font-semibold">Business-UI</h3>
+                <p className="mt-3 text-zinc-400">
+                  Professionelle Oberfläche mit Sidebar, Widgets und
+                  nachvollziehbarer Informationsstruktur.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-16">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Mögliche Technologien
+            </h2>
+
+            <div className="mt-8 rounded-[2rem] border border-cyan-400/10 bg-[#0b1224]/80 p-8">
+              <div className="flex flex-wrap gap-3">
+                {["Next.js", "React", "TypeScript", "Tailwind CSS", "Charts/UI"].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-cyan-400/20 bg-white/5 px-4 py-2 text-sm text-zinc-200"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-16">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Nutzen des Projekts
+            </h2>
+
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
+              Solche Frontends eignen sich für interne Tools, Admin-Bereiche,
+              Analyse-Dashboards oder digitale Plattformen, bei denen Klarheit,
+              Übersicht und professionelle UI eine große Rolle spielen.
+            </p>
+          </section>
+
           <div className="mt-16 rounded-[2rem] border border-cyan-400/10 bg-gradient-to-br from-[#0b1224] via-[#0a1020] to-[#050816] p-8">
             <h2 className="text-2xl font-semibold">
               Du brauchst ein modernes Frontend?
