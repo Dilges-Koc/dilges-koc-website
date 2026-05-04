@@ -23,13 +23,13 @@ export default function DatenschutzPage() {
             <p className="mt-3 leading-8">
               Dilges Koc
               <br />
-              [Straße und Hausnummer]
+              Peterstraße 5
               <br />
-              [PLZ Ort]
+              52062 Aachen
               <br />
               Deutschland
               <br />
-              E-Mail:{" "}
+              E-Mail:{"dilgaskoc@outlook.de"}
               <a
                 href="mailto:dilgaskoc@outlook.de"
                 className="text-cyan-300 hover:text-cyan-200"
