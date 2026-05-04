@@ -25,7 +25,7 @@ export default function Header() {
           <a href="/ueber-mich" className="transition hover:text-cyan-300">
             Über mich
           </a>
-          <a href="/#kontakt" className="transition hover:text-cyan-300">
+          <a href="/kontakt" className="transition hover:text-cyan-300">
             Kontakt
           </a>
         </nav>
@@ -84,7 +84,7 @@ export default function Header() {
             Über mich
           </a>
           <a
-            href="/#kontakt"
+            href="/kontakt"
             className="transition hover:text-cyan-300"
             onClick={() => setMenuOpen(false)}
           >
