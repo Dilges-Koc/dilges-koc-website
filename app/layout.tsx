@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PrivacyNotice from "./PrivacyNotice";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dilges-koc-website.vercel.app"),
@@ -37,7 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        {children}
+        <PrivacyNotice />
+      </body>
     </html>
   );
 }
