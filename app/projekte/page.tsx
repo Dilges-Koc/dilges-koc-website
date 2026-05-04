@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/app/Header";
 import Footer from "@/app/Footer";
 
 export const metadata: Metadata = {
-  title: "Projekte | Dilges Koc",
+  title: "Projekte",
   description:
     "Showcase-Projekte und Beispielarbeiten von Dilges Koc im Bereich Webentwicklung, Frontend und moderne Webseiten.",
 };
@@ -29,22 +30,19 @@ export default function ProjektePage() {
           </p>
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+            <a
+              href="/projekte/business-landingpage"
+              className="group block overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+            >
               <div className="p-5">
-                <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
-                  <div className="mb-4 flex gap-2">
-                    <div className="h-3 w-3 rounded-full bg-red-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-green-400/70" />
-                  </div>
-
-                  <div className="rounded-xl bg-gradient-to-br from-cyan-400/20 to-blue-500/10 p-6">
-                    <div className="h-4 w-20 rounded bg-cyan-200/60" />
-                    <div className="mt-6 h-10 w-4/5 rounded bg-white/90" />
-                    <div className="mt-3 h-4 w-full rounded bg-white/20" />
-                    <div className="mt-2 h-4 w-5/6 rounded bg-white/20" />
-                    <div className="mt-8 h-10 w-32 rounded-full bg-cyan-300" />
-                  </div>
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#08101f] shadow-2xl shadow-black/30">
+                  <Image
+                    src="/showcase/business-landingpage.png"
+                    alt="Showcase Business Landingpage"
+                    width={1200}
+                    height={900}
+                    className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                  />
                 </div>
               </div>
 
@@ -60,34 +58,25 @@ export default function ProjektePage() {
                 <p className="mt-4 text-sm text-zinc-500">
                   Fokus: Design, Struktur, Conversion, Responsiveness
                 </p>
+                <p className="mt-6 text-sm font-semibold text-cyan-300">
+                  Details ansehen →
+                </p>
               </div>
-            </div>
+            </a>
 
-            <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+            <a
+              href="/projekte/frontend-dashboard"
+              className="group block overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+            >
               <div className="p-5">
-                <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
-                  <div className="mb-4 flex gap-2">
-                    <div className="h-3 w-3 rounded-full bg-red-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-green-400/70" />
-                  </div>
-
-                  <div className="grid grid-cols-[80px_1fr] gap-4">
-                    <div className="rounded-xl bg-white/5 p-3">
-                      <div className="h-4 w-full rounded bg-cyan-300/40" />
-                      <div className="mt-3 h-4 w-3/4 rounded bg-white/10" />
-                      <div className="mt-2 h-4 w-2/3 rounded bg-white/10" />
-                      <div className="mt-2 h-4 w-4/5 rounded bg-white/10" />
-                    </div>
-
-                    <div className="rounded-xl bg-gradient-to-br from-blue-500/10 to-cyan-400/10 p-4">
-                      <div className="grid grid-cols-2 gap-3">
-                        <div className="h-20 rounded-xl bg-white/10" />
-                        <div className="h-20 rounded-xl bg-white/10" />
-                        <div className="col-span-2 h-28 rounded-xl bg-cyan-300/20" />
-                      </div>
-                    </div>
-                  </div>
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#08101f] shadow-2xl shadow-black/30">
+                  <Image
+                    src="/showcase/frontend-dashboard.png"
+                    alt="Showcase Frontend Dashboard"
+                    width={1200}
+                    height={900}
+                    className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                  />
                 </div>
               </div>
 
@@ -103,46 +92,45 @@ export default function ProjektePage() {
                 <p className="mt-4 text-sm text-zinc-500">
                   Fokus: UI, Klarheit, moderne Komponenten
                 </p>
+                <p className="mt-6 text-sm font-semibold text-cyan-300">
+                  Details ansehen →
+                </p>
               </div>
-            </div>
+            </a>
 
-            <div className="overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+            <a
+              href="/projekte/firmenwebseite"
+              className="group block overflow-hidden rounded-3xl border border-cyan-400/10 bg-[#0b1224]/80 transition hover:-translate-y-1 hover:border-cyan-300/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]"
+            >
               <div className="p-5">
-                <div className="rounded-2xl border border-white/10 bg-[#08101f] p-4 shadow-2xl shadow-black/30">
-                  <div className="mb-4 flex gap-2">
-                    <div className="h-3 w-3 rounded-full bg-red-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-yellow-400/70" />
-                    <div className="h-3 w-3 rounded-full bg-green-400/70" />
-                  </div>
-
-                  <div className="rounded-xl bg-gradient-to-br from-zinc-800 via-zinc-900 to-black p-6">
-                    <div className="h-4 w-24 rounded bg-cyan-300/40" />
-                    <div className="mt-6 h-12 w-3/4 rounded bg-white/90" />
-                    <div className="mt-3 h-4 w-full rounded bg-white/20" />
-                    <div className="mt-2 h-4 w-4/5 rounded bg-white/20" />
-                    <div className="mt-8 grid grid-cols-3 gap-3">
-                      <div className="h-16 rounded-xl bg-white/10" />
-                      <div className="h-16 rounded-xl bg-white/10" />
-                      <div className="h-16 rounded-xl bg-white/10" />
-                    </div>
-                  </div>
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#08101f] shadow-2xl shadow-black/30">
+                  <Image
+                    src="/showcase/firmenwebseite.png"
+                    alt="Showcase Firmenwebseite"
+                    width={1200}
+                    height={900}
+                    className="h-auto w-full object-cover transition duration-500 group-hover:scale-[1.02]"
+                  />
                 </div>
               </div>
 
               <div className="px-8 pb-8">
                 <p className="text-sm text-cyan-300/70">Showcase 03</p>
                 <h2 className="mt-2 text-2xl font-semibold">
-                  Portfolio / Freelancer Website
+                  Firmenwebseite
                 </h2>
                 <p className="mt-4 leading-7 text-zinc-400">
-                  Moderne persönliche Website mit Leistungen, Kontaktformular,
-                  Unterseiten und professionellem Auftritt.
+                  Moderne Firmenwebseite mit Service-Struktur,
+                  Vertrauenselementen und professionellem Business-Auftritt.
                 </p>
                 <p className="mt-4 text-sm text-zinc-500">
-                  Fokus: Branding, Vertrauen, Nutzerführung
+                  Fokus: Branding, Struktur, Vertrauen, Nutzerführung
+                </p>
+                <p className="mt-6 text-sm font-semibold text-cyan-300">
+                  Details ansehen →
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </main>
